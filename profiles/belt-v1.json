@@ -1,0 +1,14 @@
+{
+  "name": "belt-v1",
+  "description": "Belt-mounted activity and fall research; parameters are starting values, not validated performance claims.",
+  "sample_rate_hz": 50,
+  "channels": 6,
+  "window_samples": 100,
+  "stride_samples": 25,
+  "placement_prefix": "belt",
+  "allowed_labels": ["biking", "device_drop", "driving", "falling", "jumping", "sitting", "sprinting", "standing", "transition", "walking", "unlabeled", "unknown"],
+  "features": ["ax", "ay", "az", "gx", "gy", "gz"],
+  "units": ["g", "g", "g", "deg/s", "deg/s", "deg/s"],
+  "fall_evaluation": "Use separate human-annotated event intervals and continuous monitored exposure with fall_eval.py; window accuracy is not fall-event sensitivity.",
+  "notes": "Keep belt position, orientation and enclosure revision in session metadata. Review clipping at the firmware's current +/-4g range. The legacy wrist model must be retrained; do not enable it as a belt fall detector."
+}
