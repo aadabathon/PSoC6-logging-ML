@@ -13,7 +13,7 @@ from wearable_pipeline import IMU_COLUMNS, sha256, utc_now, write_json
 SPLITS = ("train", "validation", "test")
 STATISTICS = ("mean", "std", "min", "max", "rms", "median", "iqr", "mean_abs_delta")
 LIMITATION = (
-    "Use train.csv for exploratory tabular analysis. Open export.json in the standalone Movement Study "
+    "Use train.csv for exploratory row-wise analysis. Open export.json in the standalone Movement Study "
     "app or run wearable.py evaluate for group-disjoint evaluation using the recorded splits. "
     "Use DEEPCRAFT for temporal CNN training and MCU C export."
 )
