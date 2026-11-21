@@ -1,5 +1,11 @@
 venv/
 data/*.csv
+data/sessions/
+data/processed/
+data/*.log
+data/acceptance/
+data/reimport/
+test-output/
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
